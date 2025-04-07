@@ -17,7 +17,8 @@
 ## Quickstart with Claude Desktop
 
 1. Get your API key from [ElevenLabs](https://elevenlabs.io/app/settings/api-keys). There is a free tier with 10k credits per month.
-2. Go to Claude > Settings > Developer > Edit Config > claude_desktop_config.json to include the following:
+2. Install UV (Python package manager), install with `curl -LsSf https://astral.sh/uv/install.sh | sh` or see [the UV repo](https://github.com/astral-sh/uv) for additional install methods.
+3. Go to Claude > Settings > Developer > Edit Config > claude_desktop_config.json to include the following:
 
 ```
 {
