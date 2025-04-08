@@ -111,3 +111,16 @@ Logs when running with Claude Desktop can be found at:
 Certain ElevenLabs API operations, like voice design and audio isolation, can take a long time to resolve. When using the MCP inspector in dev mode, you might get timeout errors despite the tool completing its intended task.
 
 This shouldn't occur when using a client like Claude.
+
+### MCP ElevenLabs: spawn uvx ENOENT
+
+If you encounter the error "MCP ElevenLabs: spawn uvx ENOENT", confirm its absolute path by running this command in your terminal:
+
+```bash
+which uvx
+```
+
+Once you obtain the absolute path (e.g., `/usr/local/bin/uvx`), update your configuration to use that path (e.g., `"command": "/usr/local/bin/uvx"`). This ensures that the correct executable is referenced.
+
+
+
