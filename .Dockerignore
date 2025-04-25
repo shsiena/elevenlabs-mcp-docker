@@ -4,7 +4,6 @@
 .github
 .README.md
 .LICENSE
-setup.py
 tests
 scripts
 elevenlabs_mcp/__main__.py

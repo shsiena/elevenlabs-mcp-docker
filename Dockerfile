@@ -6,6 +6,7 @@ RUN apt-get update \
       build-essential \
       curl \
  && rm -rf /var/lib/apt/lists/*
+ENV PATH="/root/.local/bin:${PATH}"
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 WORKDIR /app
 COPY pyproject.toml setup.py uv.lock ./
